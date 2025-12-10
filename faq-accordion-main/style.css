@@ -97,5 +97,8 @@ article {
     padding: 3rem 1.5rem 0rem;
     border-radius: 0.5rem;
   }
+  h1{
+    font: size 2rem;;
+  }
   
 }
