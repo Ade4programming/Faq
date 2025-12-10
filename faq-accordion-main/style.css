@@ -38,7 +38,7 @@ main {
   padding: 2rem 1.5rem 0rem;
   border-radius: 0.5rem;
   max-width: 600px;
-  box-shadow: 0 2rem 3rem rgba(196, 95, 216, 0.164)
+  box-shadow: 0 2rem 3rem rgba(196, 95, 216, 0.164);
 }
 header {
   display: flex;
@@ -47,11 +47,12 @@ header h1 {
   font-family: var(--bold-font);
   margin-left: 1.5rem;
 }
-article h3:active, h3:focus{
-    color: hsl(293, 85%, 44%);
+article h3:active,
+h3:focus {
+  color: hsl(293, 85%, 44%);
 }
-header img{
-    width: 25px;
+header img {
+  width: 25px;
 }
 article {
   display: flex;
@@ -60,25 +61,25 @@ article {
   gap: 1rem;
   margin: 1.5rem 0.5rem;
 }
-#faq-container{
-    max-height: 600px;
-    overflow-y: scroll;
+#faq-container {
+  max-height: 600px;
+  overflow-y: scroll;
 }
-#faq-container::-webkit-scrollbar{
-    display: none;
+#faq-container::-webkit-scrollbar {
+  display: none;
 }
 /* utility classes */
 .quest {
   border-bottom: 1px solid var(--Purple-100);
 }
-.quest:focus{
-    outline: 1px solid #6aa;
-    border-radius: 10px;
+.quest:focus {
+  outline: 1px solid #6aa;
+  border-radius: 10px;
 }
-.quest p{
-    margin-bottom: 1rem;
-    color: var(--Purple-600);
-    line-height: 1.5;
+.quest p {
+  margin-bottom: 1rem;
+  color: var(--Purple-600);
+  line-height: 1.5;
 }
 .hidden {
   display: none;
@@ -93,12 +94,11 @@ article {
     background-color: var(--Purple-100);
     background-size: contain;
   }
-  main{
+  main {
     padding: 3rem 1.5rem 0rem;
     border-radius: 0.5rem;
   }
-  h1{
+  h1 {
     font-size: 3rem;
   }
-  
 }
