@@ -38,7 +38,7 @@ main {
   padding: 2rem 1.5rem 0rem;
   border-radius: 0.5rem;
   max-width: 600px;
-  box-shadow: 0 2rem 3rem rgba(196, 95, 216, 0.274);
+  box-shadow: 0 2rem 3rem rgba(196, 95, 216, 0.164)
 }
 header {
   display: flex;
