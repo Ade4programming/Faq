@@ -94,8 +94,8 @@ article {
     background-size: contain;
   }
   main{
-    padding: 3rem 2rem 0rem;
-    border-radius: 1rem;
+    padding: 3rem 1.5rem 0rem;
+    border-radius: 0.5rem;
   }
   
 }
