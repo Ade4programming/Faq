@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "workSans-regular";
+  src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+@font-face {
+  font-family: "workSans-bold";
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Purple-100: hsl(275, 100%, 97%);
+  --Purple-600: hsl(292, 16%, 49%);
+  --Purple-950: hsl(292, 42%, 14%);
+  --regular-font: "workSans-regular";
+  --bold-font: "workSans-bold";
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: url(assets/images/background-pattern-mobile.svg) no-repeat;
+  background-size: contain;
+  background-color: var(--Purple-100);
+  font-size: 16px;
+  margin: 0 1rem;
+  font-family: var(--regular-font);
+}
+main {
+  background-color: var(--White);
+  padding: 2rem 1.5rem 0rem;
+  border-radius: 0.5rem;
+  max-width: 600px;
+  box-shadow: 0 2rem 3rem rgba(196, 95, 216, 0.274);
+}
+header {
+  display: flex;
+}
+header h1 {
+  font-family: var(--bold-font);
+  margin-left: 1.5rem;
+}
+article h3:active, h3:focus{
+    color: hsl(293, 85%, 44%);
+}
+header img{
+    width: 25px;
+}
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0.5rem;
+}
+#faq-container{
+    max-height: 600px;
+    overflow-y: scroll;
+}
+#faq-container::-webkit-scrollbar{
+    display: none;
+}
+/* utility classes */
+.quest {
+  border-bottom: 1px solid var(--Purple-100);
+}
+.quest:focus{
+    outline: 1px solid #6aa;
+    border-radius: 10px;
+}
+.quest p{
+    margin-bottom: 1rem;
+    color: var(--Purple-600);
+    line-height: 1.5;
+}
+.hidden {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url(assets/images/background-pattern-desktop.svg) no-repeat;
+    background-color: var(--Purple-100);
+    background-size: contain;
+  }
+  main{
+    padding: 3rem 2rem 0rem;
+    border-radius: 1rem;
+  }
+  header img{
+    width: calc(20px *2);
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+}
