@@ -37,7 +37,7 @@ main {
   background-color: var(--White);
   padding: 2rem 1.5rem 0rem;
   border-radius: 0.5rem;
-  max-width: 600px;
+  max-width: 580px;
   box-shadow: 0 2rem 3rem rgba(196, 95, 216, 0.164);
 }
 header {
@@ -59,10 +59,10 @@ article {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin: 1.5rem 0.5rem;
+  margin: 1.5rem 0rem;
 }
 #faq-container {
-  max-height: 600px;
+  max-height: 580px;
   overflow-y: scroll;
 }
 #faq-container::-webkit-scrollbar {
@@ -70,16 +70,38 @@ article {
 }
 /* utility classes */
 .quest {
+  display: block;
   border-bottom: 1px solid var(--Purple-100);
 }
 .quest:focus {
-  outline: 1px solid #6aa;
   border-radius: 10px;
+  box-shadow: 0 0 0.1rem rgba(175, 43, 202, 0.164);
+  transition: all ease-in-out ;
 }
 .quest p {
   margin-bottom: 1rem;
   color: var(--Purple-600);
   line-height: 1.5;
+  animation-name: move;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  cursor: text;
+}
+@keyframes move {
+ 
+  from{
+    transform: scale(1.1);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+ .question:hover{
+  transition: all 0.1s; 
+  transform: translateY(4px);
+  border: 1px dotted turquoise;
+  border-radius: 10px;
+  box-shadow: 0 0 0.3rem rgba(175, 43, 202, 0.507);
 }
 .hidden {
   display: none;

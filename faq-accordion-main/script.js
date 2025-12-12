@@ -56,6 +56,7 @@ function renderFaq() {
       paragraph.classList.toggle("active");
     });
 
+    // Keyboard Navigation....
     section.addEventListener("keydown", (e) => {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
